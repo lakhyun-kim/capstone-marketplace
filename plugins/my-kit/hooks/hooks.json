@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [{ "type": "command", "command": "SEOUL_API_KEY=\"$CLAUDE_PLUGIN_OPTION_SEOUL_API_KEY\" \"${CLAUDE_PLUGIN_ROOT}/scripts/key-guard.sh\"", "onFailure": "block" }] }
+    ],
+    "PreToolUse": [
+      { "matcher": "Read|Bash|Write|Edit|WebFetch",
+        "hooks": [{ "type": "command", "command": "SEOUL_API_KEY=\"$CLAUDE_PLUGIN_OPTION_SEOUL_API_KEY\" \"${CLAUDE_PLUGIN_ROOT}/scripts/key-guard.sh\"", "onFailure": "block" }] },
+      { "matcher": "Bash|WebFetch",
+        "hooks": [{ "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/net-guard.sh\"", "onFailure": "block" }] }
+    ]
+  }
+}

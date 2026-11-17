@@ -1,0 +1,14 @@
+{
+  "name": "capstone-local",
+  "description": "캡스톤 R2 마켓플레이스",
+  "owner": {
+    "name": "캡스톤 교육생"
+  },
+  "plugins": [
+    {
+      "name": "my-kit",
+      "source": "./plugins/my-kit",
+      "description": "캡스톤 트랙 B: 내 agents, 정기 리포트와 기획안 skill, 가드레일 훅"
+    }
+  ]
+}

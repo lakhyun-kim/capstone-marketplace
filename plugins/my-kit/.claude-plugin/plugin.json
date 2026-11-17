@@ -1,0 +1,16 @@
+{
+  "name": "my-kit",
+  "version": "0.1.0",
+  "description": "캡스톤 트랙 B: 내 agents, 정기 리포트와 기획안 skill, 가드레일 훅",
+  "author": {
+    "name": "캡스톤 교육생"
+  },
+  "userConfig": {
+    "seoul_api_key": {
+      "type": "string",
+      "title": "서울 열린데이터광장 인증키",
+      "description": "비워 두면 sample.json으로 동작합니다(mock). 키는 plugin 파일에 저장되지 않습니다.",
+      "sensitive": true
+    }
+  }
+}
